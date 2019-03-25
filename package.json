@@ -1,0 +1,9 @@
+{
+  "name": "dummy-modern-js-example",
+  "version": "1.0.0",
+  "description": "This is an example module used by the Jahia Academy",
+  "main": "index.js",
+  "repository": "git@github.com:Jahia/dummy-modern-js-example.git",
+  "author": "dgaillard <dgaillard@jahia.com>",
+  "license": "MIT"
+}
