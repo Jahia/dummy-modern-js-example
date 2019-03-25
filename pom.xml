@@ -69,6 +69,10 @@
         <tag>HEAD</tag>
     </scm>
 
+    <properties>
+        <yarn.arguments>build:production</yarn.arguments>
+    </properties>
+
     <repositories>
         <repository>
             <id>jahia-public</id>
@@ -119,6 +123,16 @@
                         <goals>
                             <goal>yarn</goal>
                         </goals>
+                    </execution>
+                    <execution>
+                        <id>yarn post-install</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>yarn</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>${yarn.arguments}</arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "git@github.com:Jahia/dummy-modern-js-example.git",
   "author": "dgaillard <dgaillard@jahia.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "npx uglifyjs src/javascript/app-utils.js src/javascript/app.js -o src/main/resources/javascript/app/index.js -b",
+    "build:production": "npx uglifyjs src/javascript/app-utils.js src/javascript/app.js -o src/main/resources/javascript/app/index.js"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.5.2"
+  }
 }
